@@ -15,3 +15,8 @@
 # except Exception as e:  
 #     logging.info("We are dividing by zero")
 #     raise CustomException(e, sys) from e  
+
+from src.pipeline.training_pipeline import TrainPipeline
+
+pipeline = TrainPipeline()
+pipeline.run_pipeline()
